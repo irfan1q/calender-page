@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#main-nav{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 63, 57);
+}
+.left{
+  margin:10px;
+}
+.left a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 20px;
+  background-color: aqua;
+  padding: 2px 8px;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+.left a:hover{
+  background-color: cadetblue;
+}
+.right{
+  margin: 10px 50px;
+}
+.right i{
+  color: aqua;
+  font-size: 30px;
+  transition: 0.7s;
+  margin-left: 10px;
+}
+.right i:hover{
+  transform: scale(1.2);
+  color: cadetblue;
+}
+/* =================form================= */
+.form-container{
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+.form-1{
+  display: flex;
+  flex-direction: column; 
+}
+.form-1 input, button{
+  font-size: 1em;
+  text-align: center;
+  padding: 2%;
+  margin-top: 3%;
+}
+button{
+  color: aliceblue;
+  background-color: cadetblue;
+  font-weight: 700;
+}
+.calender-section{
+  display: flex;
+  justify-content: center;
+  margin: 5% 2%;
+  
+}
+.full-calender{
+  border: indigo 2px solid;
+}
+.full-calender H1{
+  font-size: 2em;
+  text-align: center;
+  background-color: indigo;
+  color: aliceblue;
+  padding: 1%;
+}
+.calender{
+  height: 300px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  margin: 20px 10px;
+  
+}
+
+.date, .day {
+  background-color: rgb(187, 160, 160);
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+.other-month{
+  background-color: rgb(245, 141, 141);
+}
+.day{
+  font-size: 20px;
+  background-color: rgb(163, 211, 214);
+  margin: -10px 2px 10px 2px;
+}
+/* ==============Photo album================ */
+#h1{
+  color: blueviolet;
+  font-size: 2em;
+  text-align: center;
+}
+.photo-album{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2%;
+  
+
+}
+.photo-frame{
+  margin: 2%;
+  position: relative;
+  transition: 1s;
+  
+}
+.photo{
+  height: 300px;
+  width: 300px;
+  border: 5px solid blueviolet;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.photo img{
+  width: 290px;
+  height: 290px;
+  border-radius: 5px;
+  margin: 2%; 
+}
+.photo-details{
+  opacity: 0;
+  position: absolute;
+  transition: 2s;
+}
+.photo:hover .photo-details{
+  opacity: 1;
+  background-color: rgba(98, 22, 168, 0.377);
+}
